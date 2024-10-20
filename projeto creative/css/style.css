@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    max-width: 1730px;
+    /* definir uma largura máxima */
+    margin: auto;
+    /* espaçamento externo auto */
+    /*sempre vai ficar no centro */
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 120px;
+    /* primeiro valor= em cima e baixo. segundo valor= e dos lado esquerdo e direito*/
+
+    & nav,
+    nav ul {
+
+        display: flex;
+        /* nav, nav ul= com a virgula vc consegue chamar outro elemento ou div */
+        gap: 51px;
+        align-items: center;
+
+        & li a {
+            color: #6B7280;
+            font-family: Inter;
+            font-size: 18px;
+            letter-spacing: 0.02em;
+
+        }
+
+        & li:first-child a {
+            color: #000;
+            font-weight: 600;
+        }
+    }
+
+    & button {
+        background: #1F1F39;
+        padding: 13px 35px;
+        border-radius: 8.07px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        border: none;
+
+    }
+}
+
+section {
+    max-width: 1730px;
+    margin: auto;
+    padding: 120px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
+
+
+    & .content {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        & h1 {
+            color: #1F1F39;
+            font-size: 70px;
+            font-weight: 700;
+        }
+
+        & p {
+            font-size: 28px;
+            line-height: 48px;
+            color: #1F1F39B2;
+        }
+
+        & button {
+            width: 246.49px;
+            padding: 18px;
+            border-radius: 10.87px;
+            border: none;
+            background: #1F1F39;
+
+            font-size: 24.24px;
+            font-weight: 700;
+            line-height: 30.48px;
+            color: #fff;
+
+
+
+
+        }
+
+
+
+
+
+    }
+
+}
+
+.portfolio {
+
+    & h2 {
+        max-width: 980px;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 109px;
+
+    }
+
+    & .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 109px;
+
+
+
+        & .card {
+
+            & img {
+                width: 100%;
+            }
+
+            & p {
+                margin-top: 25px;
+                font-size: 28px;
+                font-weight: 400;
+                color: #000000B2;
+
+
+                & .bold-span {
+                    font-weight: 700;
+                }
+            }
+
+        }
+
+
+
+    }
+
+}
+
+.about {
+    background-color: #000;
+    color: #fff;
+
+    & h2 {
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 29px;
+    }
+
+    & .desc {
+        & h3 {
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 55px;
+        }
+    }
+
+    & button {
+        padding: 18px 63px;
+        border-radius: 10.87px;
+        border: none;
+        background-color: #fff;
+        font-weight: 700;
+        font-size: 24px; 
+    }
+}
+
+footer {
+    max-width: 1730px;
+    margin: auto;
+    padding: 50px 120px;
+    background-color: #000;
+    border-top: 1px solid #4F4F4F;
+    color: #FFFFFF80;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .icons {
+        display: flex;
+        gap: 30px;
+
+        & img {cursor: pointer;
+
+        }
+
+    }
+}
